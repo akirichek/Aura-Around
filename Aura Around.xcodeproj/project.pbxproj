@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8212A5F51EE557FC00757DFA /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A5F41EE557FC00757DFA /* StartPageViewController.swift */; };
+		8212A5F71EE55E1F00757DFA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8212A5F61EE55E1F00757DFA /* Constants.swift */; };
+		823916A61EE551EC00737769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823916A51EE551EC00737769 /* AppDelegate.swift */; };
+		823916AB1EE551EC00737769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823916A91EE551EC00737769 /* Main.storyboard */; };
+		823916AE1EE551EC00737769 /* Aura_Around.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 823916AC1EE551EC00737769 /* Aura_Around.xcdatamodeld */; };
+		823916B01EE551EC00737769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823916AF1EE551EC00737769 /* Assets.xcassets */; };
+		823916B31EE551EC00737769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 823916B11EE551EC00737769 /* LaunchScreen.storyboard */; };
+		823916BD1EE556CB00737769 /* AuraIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823916BC1EE556CB00737769 /* AuraIntroViewController.swift */; };
+		823916C11EE556F500737769 /* SeeYourAuraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823916C01EE556F500737769 /* SeeYourAuraViewController.swift */; };
+		824E07681EE57778005CD32D /* FaceObscurationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E07671EE57778005CD32D /* FaceObscurationFilter.swift */; };
+		824E076A1EE577A6005CD32D /* CoreImageAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E07691EE577A6005CD32D /* CoreImageAdditions.swift */; };
+		824E076C1EE577ED005CD32D /* PixellationFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824E076B1EE577ED005CD32D /* PixellationFilter.swift */; };
+		824E07701EE8172F005CD32D /* Main_video_aura.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 824E076F1EE8172F005CD32D /* Main_video_aura.mp4 */; };
+		824E07721EE81A6C005CD32D /* tc_md_fr.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 824E07711EE81A6C005CD32D /* tc_md_fr.pdf */; };
+		825577431EE5647F00A2E692 /* CaptureSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825577421EE5647F00A2E692 /* CaptureSessionController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8212A5F41EE557FC00757DFA /* StartPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
+		8212A5F61EE55E1F00757DFA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		823916A21EE551EC00737769 /* Aura Around.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aura Around.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		823916A51EE551EC00737769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		823916AA1EE551EC00737769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		823916AD1EE551EC00737769 /* Aura_Around.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aura_Around.xcdatamodel; sourceTree = "<group>"; };
+		823916AF1EE551EC00737769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		823916B21EE551EC00737769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		823916B41EE551EC00737769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		823916BC1EE556CB00737769 /* AuraIntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuraIntroViewController.swift; sourceTree = "<group>"; };
+		823916C01EE556F500737769 /* SeeYourAuraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeYourAuraViewController.swift; sourceTree = "<group>"; };
+		824E07671EE57778005CD32D /* FaceObscurationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceObscurationFilter.swift; sourceTree = "<group>"; };
+		824E07691EE577A6005CD32D /* CoreImageAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreImageAdditions.swift; sourceTree = "<group>"; };
+		824E076B1EE577ED005CD32D /* PixellationFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixellationFilter.swift; sourceTree = "<group>"; };
+		824E076F1EE8172F005CD32D /* Main_video_aura.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Main_video_aura.mp4; sourceTree = "<group>"; };
+		824E07711EE81A6C005CD32D /* tc_md_fr.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = tc_md_fr.pdf; sourceTree = "<group>"; };
+		825577421EE5647F00A2E692 /* CaptureSessionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptureSessionController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8239169F1EE551EC00737769 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		823916991EE551EC00737769 = {
+			isa = PBXGroup;
+			children = (
+				823916A41EE551EC00737769 /* Aura Around */,
+				823916A31EE551EC00737769 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		823916A31EE551EC00737769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				823916A21EE551EC00737769 /* Aura Around.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		823916A41EE551EC00737769 /* Aura Around */ = {
+			isa = PBXGroup;
+			children = (
+				824E076B1EE577ED005CD32D /* PixellationFilter.swift */,
+				824E07691EE577A6005CD32D /* CoreImageAdditions.swift */,
+				824E07671EE57778005CD32D /* FaceObscurationFilter.swift */,
+				8212A5F61EE55E1F00757DFA /* Constants.swift */,
+				825577421EE5647F00A2E692 /* CaptureSessionController.swift */,
+				8212A5F41EE557FC00757DFA /* StartPageViewController.swift */,
+				823916BC1EE556CB00737769 /* AuraIntroViewController.swift */,
+				823916C01EE556F500737769 /* SeeYourAuraViewController.swift */,
+				823916A51EE551EC00737769 /* AppDelegate.swift */,
+				823916A91EE551EC00737769 /* Main.storyboard */,
+				823916AF1EE551EC00737769 /* Assets.xcassets */,
+				823916B11EE551EC00737769 /* LaunchScreen.storyboard */,
+				823916B41EE551EC00737769 /* Info.plist */,
+				823916AC1EE551EC00737769 /* Aura_Around.xcdatamodeld */,
+				824E076F1EE8172F005CD32D /* Main_video_aura.mp4 */,
+				824E07711EE81A6C005CD32D /* tc_md_fr.pdf */,
+			);
+			path = "Aura Around";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		823916A11EE551EC00737769 /* Aura Around */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 823916B71EE551EC00737769 /* Build configuration list for PBXNativeTarget "Aura Around" */;
+			buildPhases = (
+				8239169E1EE551EC00737769 /* Sources */,
+				8239169F1EE551EC00737769 /* Frameworks */,
+				823916A01EE551EC00737769 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Aura Around";
+			productName = "Aura Around";
+			productReference = 823916A21EE551EC00737769 /* Aura Around.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8239169A1EE551EC00737769 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Artem Kirichek";
+				TargetAttributes = {
+					823916A11EE551EC00737769 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = SFS8SU328T;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8239169D1EE551EC00737769 /* Build configuration list for PBXProject "Aura Around" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 823916991EE551EC00737769;
+			productRefGroup = 823916A31EE551EC00737769 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				823916A11EE551EC00737769 /* Aura Around */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		823916A01EE551EC00737769 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824E07721EE81A6C005CD32D /* tc_md_fr.pdf in Resources */,
+				823916B31EE551EC00737769 /* LaunchScreen.storyboard in Resources */,
+				824E07701EE8172F005CD32D /* Main_video_aura.mp4 in Resources */,
+				823916B01EE551EC00737769 /* Assets.xcassets in Resources */,
+				823916AB1EE551EC00737769 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8239169E1EE551EC00737769 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823916BD1EE556CB00737769 /* AuraIntroViewController.swift in Sources */,
+				823916AE1EE551EC00737769 /* Aura_Around.xcdatamodeld in Sources */,
+				823916A61EE551EC00737769 /* AppDelegate.swift in Sources */,
+				8212A5F51EE557FC00757DFA /* StartPageViewController.swift in Sources */,
+				824E076A1EE577A6005CD32D /* CoreImageAdditions.swift in Sources */,
+				824E07681EE57778005CD32D /* FaceObscurationFilter.swift in Sources */,
+				825577431EE5647F00A2E692 /* CaptureSessionController.swift in Sources */,
+				823916C11EE556F500737769 /* SeeYourAuraViewController.swift in Sources */,
+				8212A5F71EE55E1F00757DFA /* Constants.swift in Sources */,
+				824E076C1EE577ED005CD32D /* PixellationFilter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		823916A91EE551EC00737769 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				823916AA1EE551EC00737769 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		823916B11EE551EC00737769 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				823916B21EE551EC00737769 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		823916B51EE551EC00737769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		823916B61EE551EC00737769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		823916B81EE551EC00737769 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SFS8SU328T;
+				INFOPLIST_FILE = "Aura Around/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akirichek.Aura-Around";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		823916B91EE551EC00737769 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SFS8SU328T;
+				INFOPLIST_FILE = "Aura Around/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.akirichek.Aura-Around";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8239169D1EE551EC00737769 /* Build configuration list for PBXProject "Aura Around" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823916B51EE551EC00737769 /* Debug */,
+				823916B61EE551EC00737769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		823916B71EE551EC00737769 /* Build configuration list for PBXNativeTarget "Aura Around" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823916B81EE551EC00737769 /* Debug */,
+				823916B91EE551EC00737769 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		823916AC1EE551EC00737769 /* Aura_Around.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				823916AD1EE551EC00737769 /* Aura_Around.xcdatamodel */,
+			);
+			currentVersion = 823916AD1EE551EC00737769 /* Aura_Around.xcdatamodel */;
+			path = Aura_Around.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8239169A1EE551EC00737769 /* Project object */;
+}
