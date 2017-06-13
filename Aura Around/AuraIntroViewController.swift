@@ -12,7 +12,12 @@ import AVFoundation
 class AuraIntroViewController: UIViewController {
 
     @IBOutlet weak var playerContainerView: UIView!
-    var player: AVPlayer!
+   
+    var videoPlayer: AVPlayer!
+    var audioPlayer: AVQueuePlayer!
+    var audioFileNames: [String] = ["Hi", "Aura Contains", "Number into Color"]
+    var currentAudioFileIndex: Int = 0
+    var theNumber: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,35 +29,55 @@ class AuraIntroViewController: UIViewController {
         
         navigationController?.setNavigationBarHidden(false, animated: false)
         
-        setupPlayer()
-
+        if videoPlayer == nil {
+            setupVideoPlayer()
+            setupAudioPlayer()
+        }
+        
+        videoPlayer.play()
+        audioPlayer.play()
+        
         NotificationCenter.default.addObserver(self,
-                                               selector: #selector(playerDidPlayToEndTime),
+                                               selector: #selector(videoPlayerDidPlayToEndTime),
                                                name: .AVPlayerItemDidPlayToEndTime,
-                                               object: player.currentItem)
+                                               object: videoPlayer.currentItem)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self)
-        player.pause()
+        videoPlayer.pause()
+        audioPlayer.pause()
     }
     
-    func playerDidPlayToEndTime(_ notification: Notification){
+    func videoPlayerDidPlayToEndTime(_ notification: Notification) {
         DispatchQueue.main.async {
-            self.player.seek(to: kCMTimeZero)
-            self.player.play()
+            self.videoPlayer.seek(to: kCMTimeZero)
+            self.videoPlayer.play()
         }
     }
     
-    func setupPlayer() {
+    func setupVideoPlayer() {
         let path = Bundle.main.path(forResource: "Main_video_aura", ofType: "mp4")!
         let videoURL = URL(fileURLWithPath: path)
-        player = AVPlayer(url: videoURL)
-        let playerLayer = AVPlayerLayer(player: player)
+        videoPlayer = AVPlayer(url: videoURL)
+        let playerLayer = AVPlayerLayer(player: videoPlayer)
         playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         playerLayer.frame = self.playerContainerView.bounds
         self.playerContainerView.layer.addSublayer(playerLayer)
-        player.play()
+    }
+    
+    func setupAudioPlayer() {
+        let playerItems = [AVPlayerItem(url: Bundle.main.url(forResource: "Hi", withExtension: "mp3")!),
+                           AVPlayerItem(url: Bundle.main.url(forResource: "Aura Contains", withExtension: "mp3")!),
+                           AVPlayerItem(url: Bundle.main.url(forResource: "Number into Color", withExtension: "mp3")!),
+                           AVPlayerItem(url: Bundle.main.url(forResource: "\(theNumber!)", withExtension: "mp3")!),
+                           AVPlayerItem(url: Bundle.main.url(forResource: AuraColors(rawValue: theNumber)!.description, withExtension: "mp3")!)]
+        audioPlayer = AVQueuePlayer(items: playerItems)
+    }
+    
+    @IBAction func playAgainButtonClicked(_ sender: UIBarButtonItem) {
+        setupAudioPlayer()
+        audioPlayer.play()
     }
 }
